@@ -68,18 +68,18 @@ html, body {
 }
 
 .center {
-    width: 800px;
+    width: 80%;
+	max-width: 800px;
 	padding: 2%;
     margin: 100px auto;
- 	background: rgba(255, 255, 255, 0.75); /*this uses opacity of 75% for the background color*/
+ 	background: rgba(255, 255, 255, 0.60); /*this uses opacity of 75% for the background color*/
 	text-align: center;
-	border: 4px dashed white;
+	
 }
 
    
 #logo {
     margin-bottom: 16px;
-	border: 3px dashed rgb(225, 225, 225);
 	text-align: center;
 }
 
