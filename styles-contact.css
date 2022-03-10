@@ -84,21 +84,15 @@ html, body {
 }
 
 
-
-
-
-
-
 h2 {
 	font-family: dashiell-fine,serif;
 	font-weight: 500;
 	font-style: normal;
+	margin-top: 1em;
+	margin-bottom: 1em;
 	font-size: 2em;
-    margin: 0px auto 10px auto;
     color: #fff;
 }
-
-
 
 
 p { 
