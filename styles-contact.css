@@ -79,7 +79,7 @@ html, body {
 
    
 #logo {
-    margin-bottom: 16px;
+    margin-bottom: 10px;
 	text-align: center;
 }
 
@@ -87,7 +87,7 @@ html, body {
 
 h2 {
 	font-family: dashiell-fine,serif;
-	font-weight: 700;
+	font-weight: 500;
 	font-style: normal;
 	font-size: 2em;
     margin: 0px auto 10px auto;
