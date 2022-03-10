@@ -94,7 +94,7 @@ h1 {
 
 
 p { 
-    font-family: apparat,sans-serif;
+    font-family: didot,sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: 1.2em;
@@ -123,13 +123,13 @@ nav a{
 	}
 
 a{
-	color:#444;
+	color: #c7c09b;
 	text-decoration: none;
 	font-weight: bold;
 	}
 a:hover{
-	color:black;
-	background:pink;
+	color: #fff;
+	background: #969f8e;
 	}
     
 
