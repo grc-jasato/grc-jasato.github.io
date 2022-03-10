@@ -69,8 +69,8 @@ html, body {
     width: 80%;
 	max-width: 800px;
 	padding: 2%;
-    margin: auto;
- 	
+    margin: 100px auto;
+ 	border-radius: 30px 150px;
 	text-align: center;
 	
 }
