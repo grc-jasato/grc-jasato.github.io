@@ -83,8 +83,10 @@ html, body {
 	text-align: center;
 }
 
+
+
 h1 {
-	font-family: ruddy, sans-serif;
+	font-family: didot, sans-serif;
 	font-weight: 700;
 	font-style: normal;	
 	font-size: 2em;
@@ -104,7 +106,9 @@ h2 {
 }
 
 p {	
-	font-family: didot, sans-serif;
+	font-family: apparat,sans-serif;
+	font-weight: 400;
+	font-style: normal;
 	font-size: 1.2em;
     line-height: 1.6;
     color: #fff;
