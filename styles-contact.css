@@ -86,9 +86,9 @@ html, body {
 
 
 h1 {
-	font-family: didot, sans-serif;
+	font-family: dashiell-fine,serif;
 	font-weight: 700;
-	font-style: normal;	
+	font-style: normal;
 	font-size: 2em;
     margin: 0px auto 10px auto;
     color: #fff;
@@ -96,7 +96,7 @@ h1 {
 
 h2 {
 	font-family: alkaline,sans-serif;
-	font-weight: 400;
+	font-weight: 600;
 	font-style: normal;
 	font-size: 1.5em;
     line-height: 1.4;
@@ -107,7 +107,7 @@ h2 {
 
 p {	
 	font-family: apparat,sans-serif;
-	font-weight: 400;
+	font-weight: 600;
 	font-style: normal;
 	font-size: 1.2em;
     line-height: 1.6;
