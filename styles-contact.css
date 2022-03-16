@@ -82,9 +82,9 @@ html, body {
 
 
 h1 {
-	font-family: dashiell-fine,serif;
-	font-weight: 500;
-	font-style: normal;
+	font-family: lust-didone-fine, sans-serif;
+	font-weight: 700;
+	font-style: italic;
 	margin-top: 1em;
 	margin-bottom: 1em;
 	font-size: 2em;
@@ -103,7 +103,7 @@ p {
 
 
 nav{
-	font-family: didot;
+	font-family: dashiell-fine,serif;
 	font-size: 1.2em;
 	width: 400px;
 	margin: 0 auto;
