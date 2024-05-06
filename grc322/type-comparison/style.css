@@ -55,6 +55,8 @@ body{
     color: #232323;
     background-color:  #fafafa;
     margin: 3em 0;
+    font-weight: 900em;
+    font-style: bold;
 }
 
 h2 {
@@ -91,7 +93,7 @@ section.comparison figure, section.examples figure{
     padding: 1em;
 }
 
-div.garamond h2, h2.garamond{
+div.garamond h2{
     font-family: "adobe-garamond-pro", serif;
     font-weight: 700;
     font-style: normal;
@@ -158,8 +160,9 @@ section.examples figcaption{
 }
 
 h2.minion {
-    font-family: "minion-pro", serif;
-    font-weight: 700;
-    font-style: normal;
-    margin: 1em 0 1sem;
+    margin: 1em 0 0.75em;
+}
+
+h2.garamond{
+    margin: 3em 0 .75em;
 }
