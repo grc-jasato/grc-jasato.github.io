@@ -2,99 +2,105 @@
 
 html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;}
 
+
 img {
     width: 100%;
-    display: block;
 }
 
-header {
-    margin: .5em;
-	}
-
-header h1{
-    max-width: 8em;
-}
-
-div.home-container, div.container{
+h1{
+    max-width: 70%;
     margin: auto;
-    display: block;
-    max-width: 48em;
-}
-
-main{
-    margin-bottom: 2em;
 }
 
 body{
-    font-family: sans-serif;
+    font-family: "articulat-heavy-cf", sans-serif;
     font-weight: 800;
+    font-style: normal;
+    font-size: 1.25em;
+    background-color: #000000;
+    box-sizing: border-box;
 }
 
-nav ul li {
-    margin: .5em 0;
-    list-style-type: none;
+div.container{
+    max-width: 30em;
+    margin: auto;
+}
 
+section {
+    margin: 1em .5em;
+}
+
+aside {
+    margin: 0;
+}
+
+
+/* navigation bar */
+nav ul li {
+    margin: auto;
+    margin: .5em;
+    display: inline;
+    text-transform: uppercase;  
+    
+}
+
+nav {
+    text-align: center;
+    padding-bottom: 1em;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: rgb(96, 119, 150);
-}
-
-ul{
-    margin: 1.5em 0;
+    color: #ffffff;
+    margin: 1em 1em;
+    padding: 0 1em;
 }
 
 a {
     text-decoration: none;
 }
 
-h2{
-    font-family: serif;
-    font-weight: 800;
-    font-size: 3em;
-    color: rgb(96, 119, 150);
-    margin: 0 .2em;
+a:hover, h2:hover, section:hover{
+    color: #8E1B1C;
 }
 
-section.main h2{
-    font-family: serif;
+/* text */
+h2{
+    font-family: "articulat-heavy-cf", sans-serif;
     font-weight: 800;
-    font-size: 3em;
+    font-style: normal;
+    font-size: 1.2em;
+    line-height: 1em;
+    color: #ffffff;
+    padding: 1em 0 .5em;
     text-decoration: none;
-    margin: 0 .2em;
-}
-section.secondary h2{
-    font-family: serif;
-    font-weight: 800;
-    font-size: 2em;
-    margin: 0 .3em;
 }
 
 section.tertiary h2{
-    font-family: serif;
-    font-weight: 800;
-    font-size: 1.5em;
     border-top: 1px solid rgb(96, 119, 150);
-    margin: 0 .3em;
+    margin: 2em 0;
     padding-top: .5em;
 }
 
 
+
 p{
-    font-family: sans-serif;
+    font-family: "neue-haas-grotesk-text", sans-serif;
     font-weight: 400;
+    font-style: normal;
     font-size: 1em;
     line-height: 1.2em;
-    margin: 0 .5em 2em;
-    padding-bottom: 1em;
-    color: #000000;
+    color: #ffffff;
+}
+
+article p{
+    padding: 1em 0;
 }
 
 figcaption{
     font-family: sans-serif;
     font-weight: 400;
-    font-size: 1em;
+    font-size: .75em;
     font-style: italic;
     color: #808080;
     line-height: 1.2em;
@@ -102,49 +108,43 @@ figcaption{
     padding-bottom: 1em;
 }
 
+/* footer */
 footer{
-    background-color: rgb(96, 119, 150);
-    color: #ffffff;
+    /* background-color: rgb(96, 119, 150); */
+    color: #323232;
     padding: .5em;
     height: 2em;
     box-sizing: border-box;
 }
 
 footer p{
-    color: #ffffff;
-    margin: 0;
+    color: #323232;
+    margin: 0 1em 1em;
 }
 
-
-aside {
-    background-color: rgb(201, 204, 250);
-    padding: .5em;
+@media screen and (min-width: 40em){
+    nav ul li{
+        margin: auto;
+        display: inline;
+        text-transform: uppercase;  
+    }
 }
+
 
 @media screen and (min-width: 60em){
 
-    div.home-container{
-        max-width: 80em;
-        padding: 0 1em;
-        display: grid;
-        grid-template-columns: 3fr 1fr;
-        grid-gap: 1em;
-    }
-
+/* dipslay */
     div.container{
-        max-width: 60em;
-        padding: 0 1em;
+        max-width: 70em;
         display: grid;
         grid-template-columns: 3fr 1fr;
         grid-gap: 1em;
     }
 
     nav ul li{
-		display: inline;
-
-    }
-    nav ul li a{
-        padding-right: 1em;
+        margin: auto;
+        display: inline;
+        text-transform: uppercase;  
     }
 
     header, footer {
@@ -152,18 +152,18 @@ aside {
         grid-column: 1/3;
     }
 
-    div.home-container main{
+    div.container main{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 1em;
     }
 
-
     h2, section.main h2, section.secondary h2, section.tertiary h2, p, figcaption{
         margin: 0;
     }
 
-    div.home-container aside{
+/* aside */
+    div.container aside{
         background: none;
         padding: 0;
         margin-top: 0;
@@ -173,6 +173,7 @@ aside {
         margin-top: 0;
     }
 
+/* secondary */
     section.secondary{
         display: flex;
     }
@@ -200,6 +201,7 @@ aside {
         flex: 0 0 4em;
     }
 
+/* main */
     section.main{
         grid-column: 2/4;
         grid-row: 1/3;
@@ -230,4 +232,3 @@ aside {
     }
 
 	}
-
