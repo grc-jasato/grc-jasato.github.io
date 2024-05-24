@@ -135,14 +135,14 @@ footer p{
 
 /* dipslay */
     div.container{
-        max-width: 60em;
+        max-width: 70em;
         display: grid;
         grid-template-columns: 3fr 1fr;
         grid-gap: 1em;
     }
 
     div.home-container{
-        max-width: 60em;
+        max-width: 70em;
         padding: 0 1em;
         display: grid;
         grid-template-columns: 3fr 1fr;
