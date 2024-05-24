@@ -21,7 +21,7 @@ body{
     box-sizing: border-box;
 }
 
-div.container{
+div.home-container, div.container{
     max-width: 30em;
     margin: auto;
 }
@@ -141,6 +141,14 @@ footer p{
         grid-gap: 1em;
     }
 
+    div.home-container{
+        max-width: 60em;
+        padding: 0 1em;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 1em;
+    }
+
     nav ul li{
         margin: auto;
         display: inline;
@@ -163,7 +171,7 @@ footer p{
     }
 
 /* aside */
-    div.container aside{
+    div.home-container aside{
         background: none;
         padding: 0;
         margin-top: 0;
