@@ -84,6 +84,14 @@ h2{
     text-decoration: none;
 }
 
+h3{
+    font-family: "chinese-rocks", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
 section.tertiary h2{
     border-top: 1px solid #ffffff;
     margin: 2em 0;
