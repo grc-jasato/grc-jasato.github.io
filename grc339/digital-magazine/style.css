@@ -209,7 +209,7 @@ nav.photogallery img {
 }
 nav.photogallery img:hover {
     filter: grayscale(0%);
-    /* filter: drop-shadow(.2em .2em .2em #808080) */
+    filter: drop-shadow(.1em .1em 1em #ffffff)
 }
 
 /* newsletter */
