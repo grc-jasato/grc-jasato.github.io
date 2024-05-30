@@ -201,7 +201,7 @@ div.photogallery figcaption{
 
 .secondary a figure:hover {
     filter: grayscale(0%);
-    filter: drop-shadow(.1em .1em .1em #ffffff)
+    filter: drop-shadow(.1em .1em 1em #ffffff)
 }
 
 nav.photogallery img {
