@@ -16,6 +16,7 @@ body{
     font-family: "articulat-heavy-cf", sans-serif;
     font-weight: 800;
     font-style: normal;
+    color: #ebe9de;
     font-size: 1em;
     background-color: #000000;
     box-sizing: border-box;
@@ -61,7 +62,7 @@ a {
     text-decoration: none;
 }
 
-a:hover, h2:hover{
+nav a:hover, h2:hover{
     color: #8E1B1C;
 }
 
@@ -71,6 +72,7 @@ nav{
     font-style: normal;
     font-size: 1.5em;
 }
+
 
 /* text */
 h2{
@@ -84,6 +86,7 @@ h2{
     text-decoration: none;
 }
 
+
 h3{
     font-family: "chinese-rocks", sans-serif;
     font-weight: 400;
@@ -94,8 +97,8 @@ h3{
 
 section.tertiary h2{
     border-top: 1px solid #ffffff;
-    margin: 2em 0;
-    padding-top: .5em;
+    /* margin: 2em 0;
+    padding-top: .5em; */
 }
 
 p{
@@ -105,12 +108,18 @@ p{
     font-size: 1em;
     line-height: 1.2em;
     color: #ffffff;
+    padding: 0;
 }
 
 article p{
     padding: 1em 1em;
     line-height: 1.4em;
     font-size: 1.1em;
+}
+
+article h2{
+    font-size: 2em;
+    margin: .5em .5em 0;
 }
 
 figcaption{
@@ -127,6 +136,7 @@ figcaption{
 div.newsletter h2:hover, div.mainstory h2:hover, div.photogallery h2:hover{
     color: #ffffff
 }
+
 
 /* footer */
 footer{
@@ -198,7 +208,6 @@ div.photogallery figcaption{
 .secondary a figure {
     filter: grayscale(100%);
 }
-
 .secondary a figure:hover {
     filter: grayscale(0%);
     filter: drop-shadow(.1em .1em 1em #ffffff)
@@ -209,14 +218,14 @@ nav.photogallery img {
 }
 nav.photogallery img:hover {
     filter: grayscale(0%);
-    filter: drop-shadow(.1em .1em 1em #ffffff)
+    filter: drop-shadow(.1em .1em .4em #ffffff);
 }
 
+h1:hover {
+    filter: drop-shadow(.1em .1em .75em #ffffff);
+}
 /* newsletter */
 
-/* main.newsletter li:hover{
-    filter: ;
-} */
 
 section.personal-info ul li, section.music ul li, section.type ul li {
 	display: flex;
@@ -271,7 +280,6 @@ section.type ul li, section.music ul li {
     margin-bottom: .5em;
 	}
 
-
 ul.newsletter li input[type="checkbox"] {
     display: flex;
     position: relative;
@@ -294,6 +302,43 @@ button:hover {
      color: #000000;   
 }
 
+
+@media screen and (prefers-color-scheme: light) {
+    body{
+        background-color: #ebe9de;
+        color: #323232;
+    }
+
+    h2, p, h3, nav ul li a, section.personal-info ul li label, section.type ul li label, section.music ul li label{
+        color: #323232;
+    }
+
+    h1 {  
+        background-image: url("Pulse\ Logo\ Light.svg");  
+        background-repeat: no-repeat;  
+        background-size: contain;  
+        }      
+
+    h1 img.img-dark{
+        opacity: 0;
+    }
+
+    section.tertiary h2{
+        border-top: 1px solid #323232;
+    }
+
+    nav.photogallery img:hover {
+        filter: grayscale(0%);
+        filter: drop-shadow(.1em .1em .4em #323232)
+    }
+
+    .secondary a figure:hover {
+        filter: grayscale(0%);
+        filter: drop-shadow(.1em .1em 1em #323232)
+    }
+}
+
+
 @media screen and (min-width: 40em){
     nav ul li{
         margin: auto;
@@ -303,9 +348,7 @@ button:hover {
 }
 
 
-
 @media screen and (min-width: 60em){
-
 
     div.home-container{
         max-width: 80em;
