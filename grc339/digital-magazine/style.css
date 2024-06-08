@@ -62,8 +62,8 @@ a {
     text-decoration: none;
 }
 
-nav a:hover, h2:hover{
-    color: #8E1B1C;
+nav a:hover, .tertiary h2:hover{
+    color: #9657C3;
 }
 
 nav{
@@ -133,9 +133,9 @@ figcaption{
     padding-bottom: 1em;
 }
 
-div.newsletter h2:hover, div.mainstory h2:hover, div.photogallery h2:hover{
+/* div.mainstory h2:hover, div.photogallery h2:hover{
     color: #ffffff
-}
+} */
 
 
 /* footer */
@@ -213,6 +213,9 @@ div.photogallery figcaption{
     filter: drop-shadow(.1em .1em 1em #ffffff)
 }
 
+.main a figure:hover{
+    filter: drop-shadow(.1em .1em 1em #ffffff)
+}
 nav.photogallery img {
     filter: grayscale(100%);
 }
@@ -224,8 +227,13 @@ nav.photogallery img:hover {
 h1:hover {
     filter: drop-shadow(.1em .1em .75em #ffffff);
 }
+
+
 /* newsletter */
 
+section.personal-info, section.type, section.music{
+    padding-bottom: 1.5em;
+}
 
 section.personal-info ul li, section.music ul li, section.type ul li {
 	display: flex;
@@ -233,8 +241,10 @@ section.personal-info ul li, section.music ul li, section.type ul li {
 	margin-bottom: 1em;
 }
 
+
+
 section.personal-info ul li label, section.type ul li label, section.music ul li label {
-	flex: 1 0 1em;
+	/* flex: 1 0 1em; */
     font-family: "chinese-rocks", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -262,7 +272,7 @@ ul li select {
 	flex: 1 0 100%; 
 	box-sizing: border-box;
     display: flex;
-    color: #8E1B1C;    
+    color: #7284A8;    
 }
 
 section.type ul li input[type="checkbox"], section.music ul li input[type="checkbox"]{
@@ -273,17 +283,23 @@ section.type ul li input[type="checkbox"], section.music ul li input[type="check
 section.type ul, section.music ul{
 	display: flex;
 	flex-wrap: wrap;
+	} 
+
+section.type ul li{
+	flex: 2 0 8em;
+    margin-bottom: .5em;
+    display: inline;
 	}
 
-section.type ul li, section.music ul li {
-	flex: 0 0 15em;
+section.music ul li {
+	flex: 1 0 15em;
     margin-bottom: .5em;
 	}
 
-ul.newsletter li input[type="checkbox"] {
+/* ul.newsletter li input[type="checkbox"] {
     display: flex;
     position: relative;
-}
+} */
 
 button {
     border: solid 2px;
@@ -292,15 +308,14 @@ button {
     font-style: normal;
     font-size: 2em;
     text-transform: uppercase;
-    color: #8E1B1C;
+    color: #9657C3;
     background-color: #ffffff;
     /* margin-top: 1em; */
-    
 }
 
 button:hover {
      color: #000000;   
-}
+} 
 
 
 @media screen and (prefers-color-scheme: light) {
@@ -323,6 +338,11 @@ button:hover {
         opacity: 0;
     }
 
+
+    h1:hover {
+        filter: drop-shadow(.1em .1em .75em #000000);
+    }
+
     section.tertiary h2{
         border-top: 1px solid #323232;
     }
@@ -336,16 +356,16 @@ button:hover {
         filter: grayscale(0%);
         filter: drop-shadow(.1em .1em 1em #323232)
     }
-}
 
-
-@media screen and (min-width: 40em){
-    nav ul li{
-        margin: auto;
-        display: inline;
-        text-transform: uppercase;  
+    .main a figure:hover {
+        filter: grayscale(0%);
+        filter: drop-shadow(.1em .1em 1em #323232)
     }
+
 }
+
+
+
 
 
 @media screen and (min-width: 60em){
@@ -367,9 +387,26 @@ button:hover {
 
     div.newsletter{
         max-width: 80em;
-        margin: auto;
-        padding: 1em 1em;
+        /* margin: auto; */
+        /* padding: 1em 1em; */
+        display: grid;
+        /* grid-template-columns: 3fr 1fr; */
+        grid-gap: 1em;
     }
+
+    main.newsletter figure{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1em;
+    }
+
+    main.newsletter aside{
+        background: none;
+        padding: 0;
+        margin-top: 0;
+    }
+
+
     
     div.container {
         max-width: 80em;
@@ -471,8 +508,42 @@ button:hover {
     }
 
     main.newsletter{
-        grid-template-columns: 2fr, 1fr;
+        /* grid-template-columns: 2fr, 1fr; */
+        /* grid-template-columns: repeat(3, 1fr); */
         /* box-sizing: border-box; */
         display: grid;
+        grid-column: 1/3;
     }
+
+    main.newsletter figure{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .newsletter figure{
+        position: relative;
+        height:max-content;
+        margin: 3em;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-column: 2/3;
+    }
+    /* section.newsletter {
+        position: relative;
+        display: grid;
+        grid-template-columns: 60% auto;
+        grid-gap: 1em;
+    }
+    
+    section.newsletter form {
+        grid-column: 1/2;
+        position: relative;
+        overflow: hidden;
+    }
+
+    section.newsletter figure{
+        position: relative;
+        height:max-content;
+        margin-top: 3em;
+    } */
 	}
